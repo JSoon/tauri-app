@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 import { invoke } from '@tauri-apps/api'
+import '@/ipc/update';
 
 // now we can call our Command!
 // Right-click the application background and open the developer tools.

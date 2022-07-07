@@ -1,5 +1,11 @@
+// https://www.typescriptlang.org/tsconfig
 {
   "compilerOptions": {
+    "baseUrl": "./", // this must be specified if "paths" is specified.
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./src-tauri/*"]
+    },
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",

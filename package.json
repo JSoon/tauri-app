@@ -7,15 +7,16 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "tauri:dev": "tauri dev",
+    "tauri:dev": "RUST_BACKTRACE=1 tauri dev --verbose",
     "tauri:build": "tauri build --debug --verbose"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1.0.1",
+    "@tauri-apps/api": "^1.0.2",
     "vue": "^3.2.25"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.0.2",
+    "@tauri-apps/cli": "^1.0.3",
+    "@types/node": "^18.0.3",
     "@vitejs/plugin-vue": "^2.3.3",
     "typescript": "^4.7.4",
     "vite": "^2.9.9",

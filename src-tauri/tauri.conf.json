@@ -40,7 +40,7 @@
       "macOS": {
         "minimumSystemVersion": "10.13",
         "entitlements": "entitlements.mac.plist",
-        "exceptionDomain": "",
+        "exceptionDomain": "localhost",
         "frameworks": [],
         "providerShortName": null,
         "signingIdentity": "Developer ID Application: Chengdu Jiwei Wulian E-Commerce Co., Ltd. (C6F9AK99VQ)"
@@ -68,10 +68,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 768,
         "resizable": true,
         "title": "Tauri App",
-        "width": 800
+        "width": 1024
       }
     ]
   }
