@@ -3,8 +3,10 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 
+import { ref } from 'vue'
 import { invoke } from '@tauri-apps/api'
-import '@/ipc/update';
+import { getVersion } from '@tauri-apps/api/app'
+import '@/ipc/update'
 
 // now we can call our Command!
 // Right-click the application background and open the developer tools.
@@ -12,11 +14,19 @@ import '@/ipc/update';
 invoke('greet', { name: 'World' })
   // `invoke` returns a Promise
   .then((response) => console.log(response))
+
+// 获取应用版本
+const appVersion = ref()
+const getAppVersion = async () => {
+  appVersion.value = await getVersion()
+}
+getAppVersion()
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <h1 v-if="appVersion">v{{ appVersion }}</h1>
 </template>
 
 <style>

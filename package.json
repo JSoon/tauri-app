@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "tauri:dev": "RUST_BACKTRACE=1 tauri dev --verbose",
-    "tauri:build": "tauri build --debug --verbose"
+    "tauri:test": "tauri build --debug --verbose",
+    "tauri:prod": "tauri build --verbose"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.2",
