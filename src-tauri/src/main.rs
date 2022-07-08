@@ -1,15 +1,15 @@
 // Disables the command prompt window that would normally pop up on Windows if you run a bundled app
-#[cfg_attr(
+#![cfg_attr(
   all(not(debug_assertions), target_os = "windows"),
   windows_subsystem = "windows"
 )]
+
+use tauri::Manager;
 
 #[tauri::command]
 fn greet(name: &str) -> String {
   format!("Hello, {}!", name)
 }
-
-use tauri::Manager;
 
 fn main() {
   let context = tauri::generate_context!();
