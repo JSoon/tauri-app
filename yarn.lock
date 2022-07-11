@@ -57,7 +57,7 @@
   resolved "https://registry.yarnpkg.com/@tauri-apps/cli-win32-x64-msvc/-/cli-win32-x64-msvc-1.0.3.tgz#a63d15b7ca5d6f7e29d25baf5152c4438d98f5e7"
   integrity sha512-Sg/s4SAwIV2hix3P5oyj3SDTXAtmbCDXwEzOr+19CRvto10wDzUD8itJroZPSIuL+NtL4kjmDnoI4gd/1Mrvdw==
 
-"@tauri-apps/cli@^1.0.0":
+"@tauri-apps/cli@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@tauri-apps/cli/-/cli-1.0.3.tgz#3ea201a8f4446f5286d3272bbb0d39875ac4839f"
   integrity sha512-Ufwj4Fs+/8TQrVIoYbALZ9oB4pxeUFrNWAckUViv0NfyRjATBa6PbC9Q9lalNeSGqciKQEx2ox0UbwAk2p2iOg==
@@ -396,6 +396,11 @@ postcss@^8.1.10, postcss@^8.4.13:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+prettier@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
 
 resolve@^1.22.0:
   version "1.22.1"
