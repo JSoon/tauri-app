@@ -1,2 +1,4 @@
 *.html
 src-tauri
+dist
+dist-ssr

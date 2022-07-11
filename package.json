@@ -11,7 +11,8 @@
     "tauri:test": "tauri build --debug --verbose",
     "tauri:prod": "tauri build --verbose",
     "lint": "eslint --ext .js,.ts,.vue --fix src",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tauri-apps/api": "^1.0.2",
@@ -30,6 +31,7 @@
     "typescript": "^4.7.4",
     "vite": "^2.9.9",
     "vue-eslint-parser": "^9.0.3",
-    "vue-tsc": "^0.38.2"
+    "vue-tsc": "^0.38.2",
+    "husky": "^8.0.0"
   }
 }
